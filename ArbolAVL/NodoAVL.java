@@ -1,14 +1,18 @@
 package ArbolAVL;
 
 public class NodoAVL {
-    int dato, FE;
+    int dato, FE, altura;
     NodoAVL izq, der;
     
     // Constructor
     public NodoAVL(int dato) {
         this.dato = dato;
         this.FE = 0;
+        this.altura=1;
         this.izq = this.der = null;
+    }
+    public int getAltura(){
+        return this.altura;
     }
 
     // Obtener el valor del nodo
